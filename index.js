@@ -13,11 +13,11 @@ const PORT = process.env.PORT;
 
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit:'30mb', extended: true }));
-app.use(
-    cors({
-        origin: ['https://refreshing-api.onrender.com/regRoutes/register', 'https://refreshing.onrender.com/']
-    })
-);
+// app.use(
+//     cors({
+//         origin: ['https://refreshing-api.onrender.com/regRoutes/register', 'https://refreshing.onrender.com/']
+//     })
+// );
 
 app.use(function (request, response, next) {
     response.header("Access-Control-Allow-Origin", "*");
