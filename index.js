@@ -15,7 +15,7 @@ app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit:'30mb', extended: true }));
 app.use(
     cors({
-        origin: [`http://localhost:${PORT}`, 'https://refreshing.onrender.com/']
+        origin: ['https://refreshing-api.onrender.com', 'https://refreshing.onrender.com/']
     })
 );
 
